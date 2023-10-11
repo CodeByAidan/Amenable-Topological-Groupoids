@@ -78,7 +78,7 @@ This limit essentially states that the sets $U \cdot F_n$ approximate the set $U
 git clone https://github.com/CodeByAidan/Amenable-Topological-Groupoids
 
 # Change directory
-cd Amenable-Topological-Groupoids
+cd Amenable-Topological-Groupoids`
 
 # Compile the program into the bin directory
 javac -d bin src\com\CodeByAidan\topologicalgroupoid\*.java
@@ -89,4 +89,11 @@ cd "src" && javac -d ../bin Main.java && cd ..
 # Run the program
 java -cp bin Main
 ```
+
+> [!NOTE]  
+> *Note: The result of Main.java in console will display a "?" instead of "ø" in IDE terminals typically. Please make sure that your console or terminal supports UTF-8 encoding to display special characters correctly. [Alternatively, you can replace "ø" with "o" in the output message for simplicity](https://github.com/CodeByAidan/Amenable-Topological-Groupoids/blob/46fab7106fcbe7e0332120a781a18418b14fba9d/src/Main.java#L50)https://github.com/CodeByAidan/Amenable-Topological-Groupoids/blob/46fab7106fcbe7e0332120a781a18418b14fba9d/src/Main.java#L50*
+> ⬇️
+> ```java
+> System.out.println("Does the finite subset satisfy the Folner condition? " + satisfiesFolner);
+> ```
 
